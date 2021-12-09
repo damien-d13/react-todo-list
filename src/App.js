@@ -4,6 +4,16 @@ import React from "react";
 //     return <p>This is a test.</p>;
 // };
 
+const Header = () => {
+    return  <h1>Click the button</h1>;
+}
+
+class Button extends React.Component {
+    render() {
+        return <button>Click me !</button> ;
+    }
+}
+
 class Test extends React.Component {
     render() {
         return <p>This is a test.</p>;
@@ -25,6 +35,8 @@ class App extends React.Component {
       <div>
         <h1>Hello World</h1>
         <Test/>
+        <Header/>
+        <Button/>
       </div>
     );
   }
